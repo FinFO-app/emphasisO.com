@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+{% include _head.html %}
+<body>
+{% include _nav.html %}
+{{ content }}
+{% include _footer.html %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var sideNav = document.querySelectorAll('.sidenav');
+        var sideNavInstance = M.Sidenav.init(sideNav);
+    });
+</script>
+</body>
+</html>

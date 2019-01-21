@@ -1,0 +1,32 @@
+- title: Advisors
+  people:
+    - name: Prof. Zishan Hussain Khan
+      position: Director CIE
+      email: zishanhk@jmi.ac.in
+      image: 'cied.png'
+
+    - name: Dr. Rihan Khan Suri
+      position: Training Placement Officer
+      email: rsuri@jmi.ac.in
+      image: 'tpo.png'
+
+
+- title: Student Coordinators
+  people:
+    - name: Faizan Ahmad
+      position: BBA
+      email: thisisfaizanahmad@gmail.com
+      whatsapp: 7289048429
+      image: 'faizan.png'
+
+    - name: Faisal Manzer
+      position: B.Tech (Civil)
+      email: faisal_manzer@yahoo.in
+      whatsapp: 9097718815
+      image: 'faisal.png'
+
+    - name: Rahul Roy
+      position: B.Tech (Electrical)
+      email: oreanroy@gmail.com
+      whatsapp: 704248922
+      image: 'rahul.png'

@@ -1,0 +1,20 @@
+- title: The Policy Times
+  image: 'the-policy-times.png'
+  links:
+    - link: 'https://www.facebook.com/thepolicytimes/'
+      icon: facebook
+      count: 27K
+
+- title: The Jamia Review
+  image: 'the-jamia-review.png'
+  links:
+    - link: 'https://www.instagram.com/thejamiareview/'
+      icon: instagram
+      count: 2.3K
+
+- title: Travel With Danish
+  image: 'travel-with-danish.png'
+  links:
+    - link: 'https://www.instagram.com/travelwithdanish/'
+      icon: instagram
+      count: 4.8K

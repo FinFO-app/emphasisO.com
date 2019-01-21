@@ -1,0 +1,18 @@
+- title: Messages
+  url: '/messages/'
+  icon: quote
+
+- title: FAQs
+  url: '/faqs/'
+  icon: chatbubbles
+
+- title: Team
+  url: '/team/'
+  icon: people
+
+- title: Contact US
+  url: '#contact-us'
+  icon: call
+
+- image: '/assets/images/finfo-icon.png'
+  url: 'https://finfo.xyz/download/'

@@ -1,0 +1,16 @@
+social-media:
+  - icon: instagram
+    username: 'emphasis_o'
+    link: 'https://www.instagram.com/emphasis_o/'
+
+  - icon: facebook
+    username: 'emphasiso'
+    link: 'https://www.facebook.com/emphasiso'
+
+  - icon: youtube
+    username: 'emphasiso'
+    link: 'https://www.youtube.com/channel/UCh1HcNSsWgkESCVZrX7WMdQ'
+
+  - icon: twitter
+    username: 'emphasis_o'
+    link: 'https://twitter.com/emphasis_o'

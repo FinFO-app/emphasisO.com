@@ -1,0 +1,55 @@
+<footer class="page-footer green" id="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Follow US</h5>
+                <ul class="double-ul">
+
+                    {% for social-media in site.data.contact.social-media %}
+
+                    <li>
+                        <a class="grey-text text-lighten-3" href="{{social-media.link}}"
+                           style="display: flex; align-items: center">
+                            <i class="icon ion-logo-{{social-media.icon}} white-text" style="font-size: 3rem"></i>
+                            &nbsp;{{social-media.username}}
+                        </a>
+                    </li>
+
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Contact US</h5>
+                <ul>
+                    {% for core in site.data.team[1].people %}
+                    <li>
+                        <a class="grey-text text-lighten-3"
+                           href="https://api.whatsapp.com/send?phone=91{{core.whatsapp}}">
+                            {{core.name}}: {{core.whatsapp}}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <br>
+                <br>
+                <span style="color: rgba(255, 255, 255, 0.8)">
+                    <a href="https://github.com/FinFO-app/emphasisO.com" style="color: rgba(255, 255, 255, 0.8)">
+                        <i class="icon ion-logo-github white-text"></i>
+                        This website is open source and you can contribute to it too.
+                    </a>
+                    <br>
+                Maintainer: <a href="https://faisal-manzer.in" style="color: rgba(255, 255, 255, 0.8)">Faisal Manzer</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container" style="color: rgba(255, 255, 255, 0.8)">
+            © 2019 FinFO & EmphasisO
+            <a class="grey-text text-lighten-4 right" href="#!" style="color: rgba(255, 255, 255, 0.8)">Download
+                FinFO</a>
+        </div>
+    </div>
+</footer>

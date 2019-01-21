@@ -1,0 +1,63 @@
+<div class="navbar-fixed">
+    <nav class="white">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">
+
+                <b class="green-text center-hv">
+                    <img src="/assets/images/emphasiso-logo.png" alt="" class="logo-img">
+                    <span class="green-text">
+                    &nbsp;EmphasisO<span class="hide-on-small-only green-text"
+                                         style="font-weight: lighter">: E-Summit</span>
+                </span>
+                </b>
+            </a>
+
+            <!-- NAV BUTTONS -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                {% for button in site.data.buttons %}
+                <li>
+                    <a href="{{button.url}}" class="center-hv">
+                        {% if button.title %}
+                        <i class="icon ion-ios-{{button.icon}}"></i>
+                        &nbsp;
+                        {{button.title}}
+                        {% else %}
+                        <img src="{{button.image}}" alt="">
+                        {% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+
+            </ul>
+
+        </div>
+    </nav>
+
+</div>
+
+<!-- SIDE NAV -->
+<ul id="slide-out" class="sidenav">
+    {% for button in site.data.buttons %}
+    {% if button.title %}
+    <li>
+        <a href="{{button.url}}" class="center-hv">
+            <i class="material-icons ion-ios-{{button.icon}}" style="font-size: 2rem"></i>
+            {{button.title}}
+        </a>
+
+    </li>
+    {% endif %}
+    {% endfor %}
+
+    <li><a href="https://finfo.xyz/download/"><i class="material-icons ion-ios-download" style="font-size: 2rem"></i>Download FinFO</a></li>
+
+</ul>
+
+<div class="hide-on-large-only">
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large white sidenav-trigger" data-target="slide-out" href="#">
+            <i class="icon ion-ios-menu green-text" style="font-size: 3rem"></i>
+        </a>
+    </div>
+</div>

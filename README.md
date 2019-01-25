@@ -31,7 +31,7 @@ jekyll serve --watch
 
   still have trouble see this https://www.ruby-lang.org/en/documentation/installation/
 
-- install jekyll: `sudo gem install jekyll bundler`
+- install jekyll: `gem install jekyll bundler`
 - [Jekyll Docs](https://jekyllrb.com)
 
 ##### For MAC

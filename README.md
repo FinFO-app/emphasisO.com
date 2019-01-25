@@ -25,7 +25,7 @@ jekyll serve --watch
 
 #### Installation Jekyll
 - install ruby:  
-  `sudo apt-get install ruby ruby-dev build-essensital` ( for **linux** )  
+  `sudo apt-get install ruby ruby-dev build-essential` ( for **linux** )  
   https://rubyinstaller.org/ ( for **windows** )  
   `brew install ruby` ( for **mac** )  
 
@@ -42,6 +42,6 @@ gem install jekyll bundler
 
 ##### For Linux
 ```
-sudo apt-get install ruby ruby-dev build-essensital
+sudo apt-get install ruby ruby-dev build-essential
 gem install jekyll bundler
 ```

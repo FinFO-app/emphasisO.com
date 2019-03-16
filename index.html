@@ -2,7 +2,14 @@
 <head>
 <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Emphasiso 2019</title>
+ <!-- font awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+<title>EmphasisO 2019</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
@@ -23,55 +30,73 @@ function _(a){return document.getElementById(a);}
 <div id="main" style="overflow:hidden">
 <div>
 	<div id="col1" class="red" style="width:100%;height:100%;">
+    <header>
+      <nav class="nav-wrapper transparent">
 
     	<div id="background_image_wrap1" style="position:absolute;width:100%;height:100%;"></div>
         <div id="col1_content" class="white" style="position:absolute;z-index:2;width:100%;height:200px;display:none" data-float-align="left"></div>
         <div  style="position:absolute;width:100%;height:100%;">
         	<div id="top_nav_btn" style="right:0;padding:20px;position:fixed;z-index:1">
-        		<a class="btn btn btn-light" role="button" onClick="smooth_scroll()"><b>E-summit 2019</b></a>
-            	<a href="#" class="btn btn btn-light" role="button"><b>Intern Ship fair 2019</b></a>
+
+            <ul>
+            <li><a href="#">E-SUMMIT 2019</a></li>
+            <li><a href="#">INTERNSHIP FAIR 2019</a></li>
+            <li>
+              <a href="https://www.instagram.com/emphasis_o/" target="_blank" class="tooltipped btn-floating btn-small pink" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/emphasiso/" target="_blank" class="tooltipped btn-floating blue darken-4 btn-small" data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="btn-floating btn-small blue tooltipped" data-tooltip="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            </ul>
         	</div>
         	<img id="background_logo_wrap1" src="emphasiso-logo-full.png" alt="event_poster1">
-            
+
 		</div>
     	<div id="col_wrap_1" style="position:absolute;width:100%;display:none;background-color:#2e0000"></div>
+    </nav>
+    </header>
         <br><br><br><br><br><br><br><br>
 	</div>
-    
-    
-    
+
+
+
     <div id="col2" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
     	<div id="col2_content" data-float-align="left" style="width:100%;">
-        	<div class="card white ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+        	<div class="card black ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
             	<div style="text-align:right;padding:20px;width:100%;" class="text-white">
                 	<h4>About Us</h4>
-                    <p>EmphasisO E-SUMMIT is a two day event orgnized by Centre for Innovation and Entrepreneurship. The event revolves around the core value of building a startup and solving problems thereby.<br> It is the first initiative taken in Jamia to enlighten ehe spark of entrepreneurship in students; this will also lead to creative way of job creation in the university.</p>
+                    <p>EmphasisO E-SUMMIT is a two day event orgnized by Centre for Innovation and Entrepreneurship. The event aims at the core value of building a startup and solving real life problems thereby.<br> It is the first of its kind initiative taken in JMI to help nurture the spark of entrepreneurship in students. It will also lead to innovative ways of job creation in the university.</p>
                 </div>
             </div>
-        </div>        	
+        </div>
     </div>
     <div id="col3" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
     	<div id="col3_content" data-float-align="right" style="width:100%;">
-        	<div class="card white ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+        	<div class="card black ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
             	<div style="text-align:left;padding:20px;width:100%;" class="text-white">
                 	<h4>CENTRE FOR INNOVATION AND ENTREPRENEURSHIP </h4>
-				<p>Centre for Innovation and Entrepreneurship Jamia Millia Islamia, Ne Delhi, established in the year 2014, provides a unique platform for the students of university to fulfill theie innovative ideas<br>The Centre for Innovation and Entrepreneurship (CIE) at JMI has two divisions namely: the Innovation Centre and Livelihood Businness Incubator. The Centre is dedicated to serve nation and the mankind through these initiatives and hope it will be helpfull in the sustainable development of the Nation.</p>
+				<p>Centre for Innovation and Entrepreneurship Jamia Millia Islamia, New Delhi, established in the year 2014 provides a unique platform to the students of the university to implement their innovative ideas.<br>The Centre for Innovation and Entrepreneurship (CIE) at JMI has two divisions namely: The Innovation Centre and Livelihood Businness Incubator. The Centre is dedicated to serve the nation and the mankind through their initiatives and hopes to be helpfull in the sustainable development of the Nation.</p>
                 </div>
             </div>
-        </div>        	
+        </div>
     </div>
 	<div id="col4" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
     	<div id="col4_content" data-float-align="left" style="width:100%;">
-        	<div class="card white ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+        	<div class="card black ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
             	<div style="text-align:left;padding:20px;width:100%;" class="text-white">
-                	<h4>OBJECTIVE</h4>
-                    <p>*To connect and grow more new businesses.<br>*Access Indian markets and businesses.<br>*To promote and launch innovation driven products and services.<br>*To establish fruitful partnerships and collaborations with governments, industry and institutions.</p>
+                	<h4>OBJECTIVES</h4>
+                    <p>*To connect and grow more new business.<br>*Access Indian markets and business.<br>*To promote and launch innovation driven products and services.<br>*To establish fruitful partnerships and collaborations with governments, industry and institutions.</p>
                 </div>
             </div>
-        </div>        	
+        </div>
     </div>
 
-   
+
 </div>
  <div class="ah-texture-1" id="page-3">
 
@@ -95,9 +120,9 @@ function _(a){return document.getElementById(a);}
             <div class="card startup_expo ah_cards-1-2" style="">
             <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
             </div>
-            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">STRATUP EXPO</h5>
+            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">STARTUP EXPO</h5>
             </div>
-           
+
 		<div style="clear:both"></div>
     </div>
     <br><br><br><br>
@@ -156,7 +181,7 @@ function _(a){return document.getElementById(a);}
 </div>
 <div id="page-6" class="ah-texture-1 text-white">
 <div style="width:80%;margin-left:auto;margin-right:auto">
-<h3>CONTACT US</h3>
+  <h2 class="indigo-text text-darken-4">CONTACT US</h2>
 	 <div class="row ah-texture-1">
      	<div class="col" >
         	<div>
@@ -165,32 +190,44 @@ function _(a){return document.getElementById(a);}
                 <p><i class='fa fa-map-marker'></i> Jamia Milla Islamia, New Delhi 110025</p>
             </div>
 		</div>
-        <div class="col">	
-        	<div class="row ah-texture-1">
-		     	<div class="col" >
-                	<label for="name">Name:</label>
-                	<input type="text" id="" class="form-control" name="name" id="name">
-                </div>
-				<div class="col" >
-                	<label for="email">e-Mail:</label>
-                	<input type="text" type="text" class="form-control" name="email" id="email">
-                </div>
-			</div>
+        <div class="col">
+          <form class="" action="index.html" method="post">
 
-                	<label for="q_text">Message:</label>
-                	<textarea id="q_text" name="q_text" style="width:100%;height:100px"></textarea>
+        	<div class="row ah-texture-1">
+            <div class="input-field">
+              <input type="email" id="name">
+              <label for="name">your name here</label>
+            </div>
+            <div class="col s12 l5 offset-l2">
+            <div class="input-field">
+              <i class="material-icons prefix yellow-text">email</i>
+              <input type="email" id="email">
+              <label for="email">your email here</label>
+            </div>
+          </div>
+          </div>
+
+          <div class="input-field">
+            <i class="material-icons red-text prefix">message</i>
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">message</label>
+          </div>
                     <br>
-                    <button class="btn text-white" style="background-color:#1a0000;margin:10px"><i class='fas fa-paper-plane'></i> Submit</button>
+                    <div class="input-field center">
+                      <button type="submit" name="button" class="btn"><i class='fas fa-paper-plane'></i> Submit</button>
+                    </div>
+</form>
         </div>
-	</div>	
+	</div>
 </div>
 </div>
 </div>
-<div style="width:100%;" class="ah-texture-1 text-white">
-	<div style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);width:80%;margin-left:auto;margin-right:auto;padding:15px" class="card">
-    	<div class="row">
-     		<div class="col" style="text-align:center">
-            	<p>For sponsorship Opportunities
+
+<footer class="grey darken-3 page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l6">
+        <p>For sponsorship Opportunities
 Contact: me@gmail.in</p>
             </div>
             <div class="col" style="text-align:center">
@@ -202,10 +239,21 @@ Contact: me@gmail.in</p>
 Contact: me@gmail.in</p>
             </div>
 		</div>
-        <h4 style="text-align:center">CENTRE FOR INNOVATION AND ENTREPRENEURSHIP</h4>
-        <p style="text-align:center">© Team 2019</p>
-	</div>
-</div>
+      </div>
+      
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">&copy;CENTRE FOR INNOVATION AND ENTREPRENEURSHIP
+        </div>
+      </div>
+  </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
 </body>
 </html>
 <style>
@@ -220,9 +268,9 @@ var chkReadyState = setInterval(function(w,h) {
         _("loading_screen").style.display="none";
 		window.scrollBy({
 			top: -document.body.scrollTop, // negative value acceptable
-			left: 0, 
-			behavior: 'smooth' 
-		});	
+			left: 0,
+			behavior: 'smooth'
+		});
 		width_check(w,h);
     }
 }, 100);

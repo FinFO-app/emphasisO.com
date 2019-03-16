@@ -23,6 +23,7 @@ function width_check(w,h){
 	for(i=1;i<=4;i++){
 		col_height[i]=_("col"+i).offsetHeight
 	}
+	_("main").style.backgroundPosition="0px "+(col_height[1])+"px"
 	if(w!=window.innerWidth || Math.abs(h-window.innerHeight)>50){
 		//console.log(h-window.innerHeight)
 	w = window.innerWidth;
@@ -38,6 +39,7 @@ _("background_logo_wrap1").style.marginTop = (h-_("background_logo_wrap1").heigh
 window.onscroll = function() {scroll_fun()};
 
 function scroll_fun(){
+	_("main").style.backgroundPosition="0px "+document.body.scrollTop/8+"px"
     var tmp1=active_col=pre_active_col=0;
     for(i=1;i<=3;i++){
         if (document.body.scrollTop > tmp1){
@@ -53,7 +55,7 @@ function scroll_fun(){
 		for(i=1;i<=4;i++){
 			margin=(_("col"+i+"_content").getAttribute("data-float-align")=="left")?"-40%":"40%";
 			//	_("col"+i+"_content").style.marginLeft=margin;
-			if(margin=="40%"){_("col"+i+"_content").children[0].style.transition = "all 1s";_("col"+i+"_content").children[0].style.float="right";_("col"+i+"_content").children[0].style.marginRight="0%";}else{_("col"+i+"_content").style.transition = "all 1s";_("col"+i+"_content").style.marginLeft="0%";}
+			if(margin=="40%"){_("col"+i+"_content").children[0].style.transition = "all 1.5s";_("col"+i+"_content").children[0].style.float="right";_("col"+i+"_content").children[0].style.marginRight="0%";}else{_("col"+i+"_content").style.transition = "all 1.5s";_("col"+i+"_content").style.marginLeft="0%";}
 		}
 	}
 

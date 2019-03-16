@@ -1,133 +1,245 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+<html>
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emphasiso 2019</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body onLoad="width_check(w,h)" onresize="width_check(w,h)">
 
-title: 'EmphasisO: Welcome to Biggest E Summit in Jamia'
-layout: default
----
+<div id="loading_screen" style="position: fixed; width: 100%; height: 100%;z-index:3;background-color:#1a0000" class="w3-light-grey">
+	<div class="loader" style=""><img id="loading_gif" src="emphasiso_gif.gif"></div>
+</div>
+<script>
+function _(a){return document.getElementById(a);}
+	w = window.innerWidth;
+	h = window.innerHeight;
+		_("loading_gif").style.marginLeft = (w-_("loading_gif").width)/2;
+		_("loading_gif").style.marginTop = (h-_("loading_gif").height)/2;
+</script>
+<p id="demo" style="position:fixed;z-index:111;background-color:white">_</p>
 
-<div class="row">
-    <div class="col s12 m6 l6">
-        <div class="center-hv full-page">
-            <div class="center">
-                <h2 class="center-hv">
-                    <img src="/assets/images/cie-logo.png" alt="" style="height: 3rem; width: auto">
-                    &nbsp;&nbsp;
-                    <span>
-                        Centre for
-                    Innovation and Entrepreneurship, <br>
-                        <b class="green-text" style="font-weight: 700">
-                        Jamia Millia Islamia
-                    </b>
-                    </span>
-                    &nbsp;&nbsp;
-                    <img src="/assets/images/jmi-logo.png" alt="" style="height: 3rem; width: auto">
-                </h2>
-                <div>
-                    Presents
+<div id="main" style="overflow:hidden">
+<div>
+	<div id="col1" class="red" style="width:100%;height:100%;">
+
+    	<div id="background_image_wrap1" style="position:absolute;width:100%;height:100%;"></div>
+        <div id="col1_content" class="white" style="position:absolute;z-index:2;width:100%;height:200px;display:none" data-float-align="left"></div>
+        <div  style="position:absolute;width:100%;height:100%;">
+        	<div id="top_nav_btn" style="right:0;padding:20px;position:fixed;z-index:1">
+        		<a class="btn btn btn-light" role="button" onClick="smooth_scroll()"><b>E-summit 2019</b></a>
+            	<a href="#" class="btn btn btn-light" role="button"><b>Intern Ship fair 2019</b></a>
+        	</div>
+        	<img id="background_logo_wrap1" src="emphasiso-logo-full.png" alt="event_poster1">
+            
+		</div>
+    	<div id="col_wrap_1" style="position:absolute;width:100%;display:none;background-color:#2e0000"></div>
+        <br><br><br><br><br><br><br><br>
+	</div>
+    
+    
+    
+    <div id="col2" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
+    	<div id="col2_content" data-float-align="left" style="width:100%;">
+        	<div class="card white ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            	<div style="text-align:right;padding:20px;width:100%;" class="text-white">
+                	<h4>About Us</h4>
+                    <p>EmphasisO E-SUMMIT is a two day event orgnized by Centre for Innovation and Entrepreneurship. The event revolves around the core value of building a startup and solving problems thereby.<br> It is the first initiative taken in Jamia to enlighten ehe spark of entrepreneurship in students; this will also lead to creative way of job creation in the university.</p>
                 </div>
-                <br>
-                <br>
-                <h1 class="hide">
-                    Emphasiso E-Summit 2019
-                </h1>
-                <img src="/assets/images/emphasiso-logo-full.png" alt="" class="full-image">
             </div>
-        </div>
+        </div>        	
+    </div>
+    <div id="col3" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
+    	<div id="col3_content" data-float-align="right" style="width:100%;">
+        	<div class="card white ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            	<div style="text-align:left;padding:20px;width:100%;" class="text-white">
+                	<h4>CENTRE FOR INNOVATION AND ENTREPRENEURSHIP </h4>
+				<p>Centre for Innovation and Entrepreneurship Jamia Millia Islamia, Ne Delhi, established in the year 2014, provides a unique platform for the students of university to fulfill theie innovative ideas<br>The Centre for Innovation and Entrepreneurship (CIE) at JMI has two divisions namely: the Innovation Centre and Livelihood Businness Incubator. The Centre is dedicated to serve nation and the mankind through these initiatives and hope it will be helpfull in the sustainable development of the Nation.</p>
+                </div>
+            </div>
+        </div>        	
+    </div>
+	<div id="col4" class="red ah-texture-1 ah-card-1" style="width:100%;overflow:hidden;background-color:red;">
+    	<div id="col4_content" data-float-align="left" style="width:100%;">
+        	<div class="card white ah-card-2" style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+            	<div style="text-align:left;padding:20px;width:100%;" class="text-white">
+                	<h4>OBJECTIVE</h4>
+                    <p>*To connect and grow more new businesses.<br>*Access Indian markets and businesses.<br>*To promote and launch innovation driven products and services.<br>*To establish fruitful partnerships and collaborations with governments, industry and institutions.</p>
+                </div>
+            </div>
+        </div>        	
     </div>
 
-    <div class="col s12 m6 l6">
-        <div class="full-page center-hv">
-            <div class="center" style="width: 100%">
-                <h5>
-                    <span class="green-text">
-                        E-Summit and Startup Internship Fair
-                    </span>
+   
+</div>
+ <div class="ah-texture-1" id="page-3">
+
+    	<div style="width:80%;margin-left:auto;margin-right:auto" class="text-white">
+        	 <h1>E-SUMMIT 2019</h1>
+        	<div class="card entrepreneurship_talk ah_cards-1-2" style="">
+            <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
+            </div>
+            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">ENTREPRENEURSHIP TALK</h5>
+            </div>
+            <div class="card invester_talk ah_cards-1-2" style="">
+            <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
+            </div>
+            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">INVESTER TALK</h5>
+            </div>
+            <div class="card get_funded ah_cards-1-2" style="">
+            <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
+            </div>
+            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">GET FUNDED</h5>
+            </div>
+            <div class="card startup_expo ah_cards-1-2" style="">
+            <div class="read_more1" style="width:100%;height:100%;background-color:red;position:absolute;z-index:0;background-color:#1a0000;"><a href="#" class="btn btn btn-light" role="button"><b>Read more</b></a>
+            </div>
+            	<h5 style="position:absolute;bottom:0;background-color:#1a0000;opacity:.8;width:100%;height:50px">STRATUP EXPO</h5>
+            </div>
+           
+		<div style="clear:both"></div>
+    </div>
+    <br><br><br><br>
+</div>
+ <div class="ah-texture-1 text-white " id="page-4">
+
+<div style="width:80%;margin-left:auto;margin-right:auto;">
+ <h1>OUR SPEAKERS</h1><br><br>
+    <div class="card member ah-texture-1">
+        <div class="circle red dp card" style="background-image: url(hassan.jpg);background-repeat: no-repeat;background-size: cover;">
+        </div>
+        <div style="position:relative;top:-50px;text-align:center">
+            <h3>CEO of XYZ</h3>
+        </div>
+    </div>
+    <div class="card member ah-texture-1">
+        <div class="circle red dp card" style="background-image: url(hassan.jpg);background-repeat: no-repeat;background-size: cover;">
+        </div>
+        <div style="position:relative;top:-50px;text-align:center">
+            <h3>CEO of XYZ</h3>
+        </div>
+    </div>
+    <div class="card member ah-texture-1">
+        <div class="circle red dp card" style="background-image: url(hassan.jpg);background-repeat: no-repeat;background-size: cover;">
+        </div>
+        <div style="position:relative;top:-50px;text-align:center">
+            <h3>CEO of XYZ</h3>
+        </div>
+    </div>
+        <div class="card member ah-texture-1">
+        <div class="circle red dp card" style="background-image: url(hassan.jpg);background-repeat: no-repeat;background-size: cover;">
+        </div>
+        <div style="position:relative;top:-50px;text-align:center">
+            <h3>CEO of XYZ</h3>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+ </div>
+<div class=" ah-texture-1 text-white" id="page-5" style="background-color:#1a0000">
+	<div class="card ah-texture-1" style="width:60%;margin-left:auto;margin-right:auto;">
+    <h3>FAQ's</h3>
+    	<div style="padding-left:10px"><h5>Is EmphasisO free?</h5><p>It’s not. Prior to the event registration will begin on the website. There will be a minimal amount to be charged for spectators’ assurance.</p>
+		</div>
+        <hr>
+        <div style="padding-left:10px"><h5>How & When to register?</h5><p>Prior to the event registration will begin. It will be notified on the website itself. Also, on all the social media pages of EmphasisO.</p>
+        </div>
+        <hr>
+        <div style="padding-left:10px"><h5>Who can apply for Startup Internship Fair?</h5><p>Prior to the event all can apply for the internship fair, then candidates will be shortlisted as per their capabilities and respective experiences. Then, they could face startup interviews.</p>
+        </div>
+        <hr>
+        <div style="padding-left:10px"><h5>What is FinFO?</h5><p>FinFO is a news aggregator app, a startup in Jamia. EmphasisO is an initiative by FinFO founders.</p>
+        </div>
+        <hr>
+	</div>
+</div>
+<div id="page-6" class="ah-texture-1 text-white">
+<div style="width:80%;margin-left:auto;margin-right:auto">
+<h3>CONTACT US</h3>
+	 <div class="row ah-texture-1">
+     	<div class="col" >
+        	<div>
+            	<p><i class='far fa-envelope'></i> asdf@me.com</p>
+                <p><i class='fas fa-phone'></i> 987654321</p>
+                <p><i class='fa fa-map-marker'></i> Jamia Milla Islamia, New Delhi 110025</p>
+            </div>
+		</div>
+        <div class="col">	
+        	<div class="row ah-texture-1">
+		     	<div class="col" >
+                	<label for="name">Name:</label>
+                	<input type="text" id="" class="form-control" name="name" id="name">
+                </div>
+				<div class="col" >
+                	<label for="email">e-Mail:</label>
+                	<input type="text" type="text" class="form-control" name="email" id="email">
+                </div>
+			</div>
+
+                	<label for="q_text">Message:</label>
+                	<textarea id="q_text" name="q_text" style="width:100%;height:100px"></textarea>
                     <br>
-                    Starts In:
-                </h5>
-                {% include counter.html %}
-                <br>
-                <div class="video-container z-depth-5" style="border-radius: 20px">
-                    <iframe width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/NzHxNPifXNM?controls=0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                            allowfullscreen></iframe>
-                </div>
-
-            </div>
+                    <button class="btn text-white" style="background-color:#1a0000;margin:10px"><i class='fas fa-paper-plane'></i> Submit</button>
         </div>
-    </div>
-
+	</div>	
 </div>
-
-<div class="container">
-    <div class="row flex" id="explain-row">
-        {% for intro in site.data.intro %}
-        <div class="col s12 m4 l4">
-            <div class="card" style="height: 100%">
-                <div class="card-content">
-                    <span class="card-title">
-                        <b class="green-text">
-                            {{intro.title}}
-                        </b>
-                    </span>
-                    {{intro.body}}
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-
-    </div>
-
 </div>
-
-<div class="container">
-    <div class="row">
-
-        <div class="col s12 m12 l6">
-            <h3>
-                Our Media Partners
-            </h3>
-
-            <ul class="collection">
-                {% for partner in site.data.media-partners %}
-                <li class="collection-item avatar">
-                    <img src="/assets/images/{{partner.image}}" alt="" class="circle">
-                    <span class="title" style="font-size: 1.5rem">{{partner.title}}</span>
-                    <p style="font-weight: 300">
-                        {% for link in partner.links %}
-                        &nbsp;
-                        <a href="{{link.link}}" style="font-size: 2rem;color: #777777">
-                            <i class="icon ion-{% if link.icon != 'link' %}logo{% else %}ios{% endif %}-{{link.icon}}"
-                               style="font-size: 2rem"></i> {{link.count}}
-                        </a> <br>
-                        &nbsp;
-                        {% endfor %}
-                    </p>
-                </li>
-                {% endfor %}
-
-            </ul>
-
-        </div>
-
-        <div class="col s12 m12 l6">
-            <h3>
-                What? When? How?
-            </h3>
-
-            <div class="video-container z-depth-5" style="border-radius: 20px">
-                <iframe width="560" height="315"
-                        src="https://www.youtube-nocookie.com/embed/NzHxNPifXNM?controls=0" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                        allowfullscreen></iframe>
-            </div>
-
-        </div>
-
-    </div>
-
 </div>
+<div style="width:100%;" class="ah-texture-1 text-white">
+	<div style="background-color:#2e0000;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);width:80%;margin-left:auto;margin-right:auto;padding:15px" class="card">
+    	<div class="row">
+     		<div class="col" style="text-align:center">
+            	<p>For sponsorship Opportunities
+Contact: me@gmail.in</p>
+            </div>
+            <div class="col" style="text-align:center">
+            	<p>For Speaking Opportunities
+Contact: me@gmail.in</p>
+            </div>
+            <div class="col" style="text-align:center">
+            	<p>For Association Opportunities
+Contact: me@gmail.in</p>
+            </div>
+		</div>
+        <h4 style="text-align:center">CENTRE FOR INNOVATION AND ENTREPRENEURSHIP</h4>
+        <p style="text-align:center">© Team 2019</p>
+	</div>
+</div>
+</body>
+</html>
+<style>
+
+</style>
+<script>
+flag1=0;
+var chkReadyState = setInterval(function(w,h) {
+    if (document.readyState == "complete" && flag1==1) {
+        // clear the interval
+        clearInterval(chkReadyState);
+        _("loading_screen").style.display="none";
+		window.scrollBy({
+			top: -document.body.scrollTop, // negative value acceptable
+			left: 0, 
+			behavior: 'smooth' 
+		});	
+		width_check(w,h);
+    }
+}, 100);
+window.setInterval(function(){flag1=1;}, 1500);
+var loadCss = function(){
+    var cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+    var head = document.getElementsByTagName('head')[0];
+    head.parentNode.insertBefore(cssLink, head);
+	var cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = 'https://use.fontawesome.com/releases/v5.7.0/css/all.css';
+    var head = document.getElementsByTagName('head')[0];
+    head.parentNode.insertBefore(cssLink, head);
+};
+//call function on window load
+window.addEventListener('load', loadCss);
+
+</script>

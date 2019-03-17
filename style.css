@@ -10,6 +10,7 @@
 .get_funded{background-image: url("get_funded.jpg");background-size: cover;background-repeat: no-repeat;}
 .startup_expo{background-image: url("startup_expo.jpg");background-size: cover;background-repeat: no-repeat;}
 .ah_cards-1-2{width:23%;height:200px;background-color:#721817;float:left;text-align:center;position:relative;margin:1%}
+
 .faq-txt{width:60%;}
 .read_more1{opacity:0;}
 .read_more1:hover{opacity:.9}

@@ -20,7 +20,7 @@
 .theme2{background-color:#FA9F42;color:#721817!important}
 .theme3{background-color:#000000;color:white!important}
 @media screen and (max-width: 600px) {
-	.faq-txt{width:60%;}
+	.faq-txt{width:90%;}
 	.clg_campus{background-image: url("dark-honeycomb.png");}
 	#background_logo_wrap1{width:90%}
 	#col1{background-image: url("mobile_jmi_background.jpg");background-size: cover;background-repeat: no-repeat;}

@@ -7,9 +7,47 @@
 {% include _footer.html %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         var sideNav = document.querySelectorAll('.sidenav');
         var sideNavInstance = M.Sidenav.init(sideNav);
+
+        var parallax = document.querySelectorAll('.parallax');
+        var parallaxInstances = M.Parallax.init(parallax);
+
+        var scrollimate = document.getElementsByClassName('scrollimate');
+        var scrollPostitions = [];
+        for (var i = 0; i < scrollimate.length; i++) {
+            scrollimate[i].style.opacity = "0";
+            scrollimate[i].classList.add("animated");
+            scrollPostitions[i] = {
+                pos: scrollimate[i].offsetTop || 0,
+                animated: false,
+            }
+        }
+
+        var body = document.body,
+            html = document.documentElement;
+
+        var pageHeight = Math.max(body.scrollHeight, body.offsetHeight,
+            html.clientHeight, html.scrollHeight, html.offsetHeight);
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        document.addEventListener('scroll', function () {
+            var bodyOffset = (window.pageYOffset || document.documentElement.scrollTop) + 8.5 * h / 10;
+            console.log(bodyOffset);
+            for (var i = 0; i < scrollimate.length; i++) {
+                if (!scrollPostitions[i].animated && bodyOffset >= (scrollPostitions[i].pos)) {
+                    // alert('here');
+                    var ele = scrollimate[i];
+                    scrollimate[i].style.opacity = "1";
+                    scrollimate[i].classList.add(ele.hasAttribute('data-scrollimate-class')? ele.getAttribute('data-scrollimate-class'): "slideInUp");
+                    // scrollimate[i].classList.add("animate");
+                    // scrollimate[i].classList.add("infinite");
+                    // scrollimate[i].classList.add("red");
+                    scrollPostitions[i].animated = true
+                }
+            }
+        })
     });
 </script>
 </body>

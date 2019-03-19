@@ -7,69 +7,49 @@ layout: default
 ---
 
 <div class="row">
-    <div class="col s12 m6 l6">
-        <div class="center-hv full-page">
-            <div class="center">
-                <h2 class="center-hv">
-                    <img src="/assets/images/cie-logo.png" alt="" style="height: 3rem; width: auto">
-                    &nbsp;&nbsp;
-                    <span>
-                        Centre for
-                    Innovation and Entrepreneurship, <br>
-                        <b class="green-text" style="font-weight: 700">
-                        Jamia Millia Islamia
-                    </b>
-                    </span>
-                    &nbsp;&nbsp;
-                    <img src="/assets/images/jmi-logo.png" alt="" style="height: 3rem; width: auto">
-                </h2>
-                <div>
-                    Presents
-                </div>
-                <br>
-                <br>
-                <h1 class="hide">
-                    Emphasiso E-Summit 2019
-                </h1>
-                <img src="/assets/images/emphasiso-logo-full.png" alt="" class="full-image">
+    <div class="col s12 m12 l12" style="padding: 0">
+        <div class="parallax-container full-page" style="background-color: rgba(0, 0, 0, 0.7)">
+            <div class="parallax">
+                <img src="/assets/images/galib-lawn.jpg">
             </div>
-        </div>
-    </div>
-
-    <div class="col s12 m6 l6">
-        <div class="full-page center-hv">
-            <div class="center" style="width: 100%">
-                <h5>
-                    <span class="green-text">
-                        E-Summit and Startup Internship Fair
-                    </span>
+            <div class="center-hv full-page" style="padding: 20px;">
+                <div class="center">
+                    <!--<img src="/assets/images/main-logo.png" alt="" class="responsive-img">-->
+                    <img src="/assets/images/emphasiso-logo-full-200.png" alt="" style="width: 150px"
+                         class="animated jackInTheBox">
+                    <h1 style="margin: 0" class="green-text animated fadeInUp delay-1s">
+                        EmphasisO
+                    </h1>
+                    <h5 class="animated fadeIn lightSpeedIn delay-1s">
+                        Flight to startup world
+                    </h5>
                     <br>
-                    Starts In:
-                </h5>
-                {% include counter.html %}
-                <br>
-                <div class="video-container z-depth-5" style="border-radius: 20px">
-                    <iframe width="560" height="315"
-                            src="https://www.youtube-nocookie.com/embed/NzHxNPifXNM?controls=0" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                            allowfullscreen></iframe>
+                    <div class="animated fadeIn delay-1s" style="padding: 5px;">
+                        <h5 class="animated fadeIn delay-1s" style="font-size: 2.2rem">
+                            April 13th -14th
+                        </h5>
+                    </div>
+                    <br>
+                    <div class="animated fadeIn delay-1s green" style="padding: 15px;border-radius: 10px">
+                        <h5 class="animated pulse delay-2s white-text" style="font-size: 2.0rem;margin: 0">
+                            Register Now
+                        </h5>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
-
 </div>
 
 <div class="container">
     <div class="row flex" id="explain-row">
         {% for intro in site.data.intro %}
-        <div class="col s12 m4 l4">
-            <div class="card" style="height: 100%">
-                <div class="card-content">
-                    <span class="card-title">
-                        <b class="green-text">
+        <div class="col s12 m6 l6" style="margin-bottom: 25px">
+            <div class="card scrollimate green" style="height: 100%; border-radius: 10px"
+                 data-scrollimate-class="fadeInUp">
+                <div class="card-content scrollimate" style="font-size: 1.3rem;color: #fff9">
+                    <span class="card-title scrollimate" style="font-size: 2rem">
+                        <b class="white-text">
                             {{intro.title}}
                         </b>
                     </span>
@@ -78,56 +58,97 @@ layout: default
             </div>
         </div>
         {% endfor %}
-
     </div>
+</div>
 
+<div class="green" style="padding-top: 20px;padding-bottom: 20px">
+    <div class="container">
+        <div class="row">
+            <h3 class="white-text">
+                Speakers
+            </h3>
+
+            {% for speaker in site.data.speakers %}
+            <div class="col s12 m6 l4">
+                <div class="card scrollimate" data-scrollimate-class="fadeIn">
+                    <div class="card-image">
+                        <img src="/assets/images/{{ speaker.image }}">
+                        <div class="card-title green" style="opacity: 0.75;width: 100%">
+                            <h5 class="white-text" style="margin: 0">
+                                {{ speaker.name }}
+                            </h5>
+                            <p style="font-size: 1.1rem;color: #ffffff">
+                                {{ speaker.post }}, <br>
+                                {{ speaker.company }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
 </div>
 
 <div class="container">
     <div class="row">
+        <h3 class="green-text">
+            Partners
+        </h3>
 
-        <div class="col s12 m12 l6">
-            <h3>
-                Our Media Partners
-            </h3>
-
-            <ul class="collection">
-                {% for partner in site.data.media-partners %}
-                <li class="collection-item avatar">
-                    <img src="/assets/images/{{partner.image}}" alt="" class="circle">
-                    <span class="title" style="font-size: 1.5rem">{{partner.title}}</span>
-                    <p style="font-weight: 300">
-                        {% for link in partner.links %}
-                        &nbsp;
-                        <a href="{{link.link}}" style="font-size: 2rem;color: #777777">
-                            <i class="icon ion-{% if link.icon != 'link' %}logo{% else %}ios{% endif %}-{{link.icon}}"
-                               style="font-size: 2rem"></i> {{link.count}}
-                        </a> <br>
-                        &nbsp;
-                        {% endfor %}
-                    </p>
-                </li>
-                {% endfor %}
-
-            </ul>
-
+        {% for partner in site.data.partners %}
+        <div class="col s12 m4 l3">
+            <a href="{{ partner.link }}">
+                <img src="/assets/images/{{ partner.image }}" alt="" style="width: 100%">
+            </a>
         </div>
-
-        <div class="col s12 m12 l6">
-            <h3>
-                What? When? How?
-            </h3>
-
-            <div class="video-container z-depth-5" style="border-radius: 20px">
-                <iframe width="560" height="315"
-                        src="https://www.youtube-nocookie.com/embed/NzHxNPifXNM?controls=0" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                        allowfullscreen></iframe>
-            </div>
-
-        </div>
+        {% endfor %}
 
     </div>
+</div>
 
+
+<div class="row">
+    <div class="container">
+        <div class="col s12 m12 l8">
+
+            <h3 id="faqs" class="green-text">
+                FAQs
+            </h3>
+
+            {% for faq in site.data.faqs %}
+            <b>
+                {{faq.question}}
+            </b>
+
+            <p style="font-weight: lighter">
+                {{faq.answer}}
+            </p>
+
+            <br>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="margin: 0">
+    <div class="col s12 m12 l12" style="padding: 0">
+        <div class="parallax-container full-page" style="background-color: rgba(0, 0, 0, 0.7)">
+            <div class="parallax">
+                <img src="/assets/images/crowd.png">
+            </div>
+            <div class="center-hv full-page" style="padding: 20px;">
+
+                <div class="green" style="padding: 25px;border-radius: 10px">
+                    <h5 class="white-text" style="font-size: 2.5rem;margin: 0">
+                        Register Now
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>

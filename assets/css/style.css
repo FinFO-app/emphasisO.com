@@ -104,7 +104,8 @@ nav a{
 }
 #logos_1{height:200px;}
 #logos_1 img{height:200px}
-
+.esummit_wraper{opacity:0;transition: .2s;-webkit-transition: .2s;}
+.esummit_wraper:hover{opacity:.9}
 
 /*
     LARGE

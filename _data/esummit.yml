@@ -1,15 +1,15 @@
 - name: ENTREPRENEURSHIP TALK
   image: entrepreneurship_talk.jpg
-  link:
+  link: esummit.html#entrepreneurship_talk
 
 - name: INVESTER TALK
   image: invester_talk.jpg
-  link:
+  link: esummit.html#investor_talk
 
 - name: GET FUNDED
   image: get_funded.jpg
-  link: 
+  link: esummit.html#get_funded
 
 - name: STARTUP EXPO
   image: startup_expo.jpg
-  link: 
+  link: esummit.html#startup_expo

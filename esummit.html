@@ -30,6 +30,7 @@
 }
 ul.a {list-style-type: circle;}
 .rotate-45 {-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
+
 </style>
 <body>
 <div id="nav" class="blue card animated fadeInDown" style="margin:0;position:fixed;width:100%;z-index:1">
@@ -87,46 +88,51 @@ from diversified sectors such as ....  will be sharing their experinces.</li>
         	</div>
     	</div>
         <div id="content2" class="white ">
-        	<div class="slider container white">
-				<ul class="slides white">
-      				<li>
-                        <div class="container" >
-                            <div id="slide_11" class="row">
-                                <div class="col s12 l4 m4 " style="margin-top:15px">
-                                    <div class="card">
-                                        <img src="assets/images/Kunwer-Sachdev.png" style="width:100%">
-                                    </div>
-                                </div>
-                                <div class="col s12 l8 m8">
-                                    <div>
-                                    <p><h3>Mr. Kunwer Sachdeva</h3><h5>Founder, SuKam inverters</h5></p>
-                                    <p>The Solar Man of India, Kunwer Sachdeva the founder of India's leading power solutions company - Su-Kam® Power Systems, is one of the greatest innovator, marketer, motivational speaker and visionary entrepreneur of our times.</p>
-                                    </div>
-                                </div>
+            <div class="slideshow-container">
+                <div class="container mySlides2">
+                    <div id="slide_11" class="row">
+                        <div class="col s12 l4 m4 " style="margin-top:15px">
+                            <div class="card">
+                                <img src="assets/images/Kunwer-Sachdev.png" style="width:100%">
                             </div>
                         </div>
-					</li>
-                    <li>                        
-                        <div class="container" >
-                            <div id="slide_12" class="row">
-                                <div class="col s12 l4 m4 " style="margin-top:15px">
-                                    <div class="card">
-                                        <img src="assets/images/Vikas_Jain.png" style="width:100%">
-                                    </div>
-                                </div>
-                                <div class="col s12 l8 m8">
-                                    <div>
-                                    <p><h3>Mr. Vikas Jain</h3><h5>Co-Founder, Micromax Informatics</h5></p>
-                                    <p>Vikas Jain  Co-Founder of India's consumer electronics company Micromax Informatics.Vikas is an alumnus of Jamia Millia University from where he completed his engineering
-degree. </p>
-                                    </div>
-                                </div>
+                        <div class="col s12 l8 m8">
+                            <div>
+                                                <p><h3>Mr. Kunwer Sachdeva</h3><h5>Founder, SuKam inverters</h5></p>
+                                                <p>The Solar Man of India, Kunwer Sachdeva the founder of India's leading power solutions company - Su-Kam® Power Systems, is one of the greatest innovator, marketer, motivational speaker and visionary entrepreneur of our times.</p>
                             </div>
                         </div>
-					</li>
-				</ul>
-			</div>
-        </div>
+                    </div>
+                </div>            
+                <div class="container mySlides2" >
+                    <div id="slide_12" class="row">
+                        <div class="col s12 l4 m4 " style="margin-top:15px">
+                            <div class="card">
+                                <img src="assets/images/Vikas_Jain.png" style="width:100%">
+                            </div>
+                        </div>
+                        <div class="col s12 l8 m8">
+                            <div>
+                                                <p><h3>Mr. Vikas Jain</h3><h5>Co-Founder, Micromax Informatics</h5></p>
+                                                <p>Vikas Jain  Co-Founder of India's consumer electronics company Micromax Informatics.Vikas is an alumnus of Jamia Millia University from where he completed his engineering
+            degree. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!--
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+              
+            
+              -->
+            </div>
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
     </div>
     <div class="blue" id="investor_talk" >
         <div class="row hide-on-small-and-down">
@@ -263,10 +269,25 @@ There  are also  "reward" in exchange for financial contribution, typically in t
 </div>
 </body>
 <script>
- document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems);
-  });
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
   var instance = M.Tabs.init(document.getElementById("tab"));
 </script>
 </html>

@@ -1,8 +1,9 @@
-- name: Mr. Kunwer Sachdeva
-  post: Founder
-  company: SuKam inverters
-  image: Kunwer-Sachdev.png
+
 - name: Mr. Vikas Jain
   post: Co Founder
   company: Micromax Informatics Limited 
   image: Vikas_Jain.png
+- name: Mr. Kunwer Sachdeva
+  post: Founder
+  company: SuKam inverters
+  image: Kunwer-Sachdev.png

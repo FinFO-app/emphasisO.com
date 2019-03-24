@@ -133,20 +133,17 @@ layout: default
 
 
 
-<div class="container">
-    <div class="row">
-        <h3 class="green-text">
-            Partners
-        </h3>
-
-        {% for partner in site.data.partners %}
-        <div class="col s12 m4 l3">
-            <a href="{{ partner.link }}">
-                <img src="/assets/images/{{ partner.image }}" alt="" style="width: 100%">
-            </a>
-        </div>
-        {% endfor %}
-
+<div class="container" style="overflow:hidden;">
+    <h3 class="green-text">Partners</h3>
+    <div class="row marquee__content container">
+    {% for partner in site.data.partners %}
+    <div class="col s12 m4 l3">
+        <p style="text-align:center">{{ partner.type }}</p>
+        <a href="{{ partner.link }}">
+            <img src="/assets/images/{{ partner.image }}" alt="" style="width: 100%">
+        </a>
+    </div>
+    {% endfor %}
     </div>
 </div>
 

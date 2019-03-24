@@ -1,11 +1,19 @@
 - name: Indian Angel Network
   image: ian.png
-  link:
+  link: 
+  type:Investment Partner
 
 - name: Event High
   image: eh.png
-  link:
+  link: 
+  type:Ticketing Partner
 
 - name: FinFO
   image: finfo-icon.png
   link: https://finfo.xyz/download
+  type: App Partner
+
+- name: Internshala
+  image: internshala-icon.png
+  link: 
+  type: Students Outreach partner

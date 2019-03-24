@@ -1,12 +1,12 @@
 - name: Indian Angel Network
   image: ian.png
   link: https://www.indianangelnetwork.com
-  type:Investment Partner
+  type: Investment Partner
 
 - name: Event High
   image: eh.png
   link: https://www.eventshigh.com/
-  type:Ticketing Partner
+  type: Ticketing Partner
 
 - name: FinFO
   image: finfo-icon.png

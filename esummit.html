@@ -30,7 +30,16 @@
 }
 ul.a {list-style-type: circle;}
 .rotate-45 {-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
-
+.dot {
+	cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 </style>
 <body>
 <div id="nav" class="blue card animated fadeInDown" style="margin:0;position:fixed;width:100%;z-index:1">
@@ -132,13 +141,13 @@ from diversified sectors will be sharing their experiences.</li>
               
             
               -->
+              <div style="text-align:center">
+				<span onclick="currentSlide(0)" class="dot"></span> 
+				<span onclick="currentSlide(1)" class="dot"></span> 
+            </div>
             </div>
 		</div>
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
+            
     </div>
     <div class="blue" id="investor_talk" >
         <div class="row hide-on-small-and-down">
@@ -146,7 +155,7 @@ from diversified sectors will be sharing their experiences.</li>
                 <img src="assets/images/investor_talk.png?a" class="home_img">
             </div>
             <div class="col s12 l6 m6 white-text " style="height:100%;margin-top:200px">
-                <h4 class="home_title center">INVESTOR TALK</h4>
+                <h4 class="home_title center">INVESTOR'S TALK</h4>
                 <ul>
                     <li>
                         <i class='fas fa-caret-right'></i> The act of commiting money or capital to an endeavor with the expectation of 
@@ -163,7 +172,7 @@ different times during the E-summit to interact with you and know about your fir
 
             </div>
             <div class="col s12 l6 m6 white-text center-hv">
-                <h4 class="home_title center">INVESTOR TALK</h4>  
+                <h4 class="home_title center">INVESTOR'S TALK</h4>  
                  <ul>
                     <li>
                         <i class='fas fa-caret-right'></i> The act of commiting money or capital to an endeavor with the expectation of 
@@ -253,7 +262,7 @@ different times during the E-summit to interact with you and know about your fir
                         <li><i class="fas fa-caret-right"></i> These finalist has to pay an amount of 1000 Rs once they receive the confirmation e-mail.</li>
 
                     </ul>
-                    <h6 class="home_title center" style="margin-top:50px">DATE: April 13th,2019 <br> VENUE: Nehru Guest House<br>Time: 4:00 PM</h6>
+                    <h6 class="home_title center" style="margin-top:50px">DATE: April 13th,2019 <br> VENUE: Nehru guest House<br>Time: 4:00 PM</h6>
             </div>
         </div>
         <div class="row show-on-small" style="display:none">
@@ -273,7 +282,7 @@ different times during the E-summit to interact with you and know about your fir
                         <li><i class="fas fa-caret-right"></i> These finalist has to pay an amount of 1000 Rs once they receive the confirmation e-mail.</li>
 
                     </ul>    
-                    <h6 class="home_title center" style="margin-top:50px">DATE: April 13th,2019 <br> VENUE: Nehru Guest House<br>Time: 4:00 PM</h6>        
+                    <h6 class="home_title center" style="margin-top:50px">DATE: April 13th,2019 <br> VENUE: Nehru guest House<br>Time: 4:00 PM</h6>        
             </div>
         </div>
     
@@ -311,7 +320,10 @@ different times during the E-summit to interact with you and know about your fir
 
 var slideIndex = 0;
 showSlides();
-
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+  clearTimeout(myVar);
+}
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides2");
@@ -322,10 +334,10 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" blue", "");
   }
   slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " blue";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 

@@ -1,11 +1,11 @@
 - name: Indian Angel Network
   image: ian.png
-  link: 
+  link: https://www.indianangelnetwork.com
   type:Investment Partner
 
 - name: Event High
   image: eh.png
-  link: 
+  link: https://www.eventshigh.com/
   type:Ticketing Partner
 
 - name: FinFO
@@ -15,5 +15,5 @@
 
 - name: Internshala
   image: internshala-icon.png
-  link: 
+  link: https://internshala.com
   type: Students Outreach partner

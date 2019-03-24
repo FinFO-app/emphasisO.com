@@ -110,6 +110,56 @@ html {scroll-behavior: smooth;}
 /*
     LARGE
 */
+.marquee {
+  margin: 0 auto;
+  width: 100%; // or 100% inside a container
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  
+  &:before, &:after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 30px;
+    content: "";
+    z-index: 1;
+  }
+  &:before {
+    left: 0;
+    background: linear-gradient(to right, white 5%, transparent 100%);
+  }
+  &:after {
+    right: 0;
+    background: linear-gradient(to left, white 5%, transparent 100%);
+  }
+}
+
+.marquee__content {
+  width: 300% !important;
+  display: flex;
+  line-height: 30px;
+  animation: marquee 10s linear infinite forwards;
+  &:hover {
+    animation-play-state: paused;
+  } 
+}
+
+.list-inline {
+  display: flex;
+  justify-content: space-around;
+  width: 33.33%;
+  /* reset list */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-66.6%); }
+}
 @media only screen and (min-width: 992px) {
 
     nav .brand-logo {

@@ -17,3 +17,23 @@
   image: internshala-icon.png
   link: https://internshala.com
   type: Students Outreach partner
+
+- name: Startup Success Stories
+  image: startup_success_stories.png
+  link: https://startupsuccessstories.com/
+  type: Students Outreach partner
+  
+- name: Spark Talks
+  image: Spark_talk.png
+  link: http://sparktalks.in/
+  type: Media Partner
+  
+- name: Gandour
+  image: Gandour.png
+  link: http://www.gandour.com/
+  type: Food Partner
+  
+- name: Monster Energy
+  image: Monster.png
+  link: https://www.monsterenergy.com/
+  type: Exclusive Energy Partner

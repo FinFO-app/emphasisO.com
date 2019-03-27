@@ -142,8 +142,8 @@ from diversified sectors will be sharing their experiences.</li>
             
               -->
               <div style="text-align:center">
-				<span onclick="currentSlide(0)" class="dot"></span> 
-				<span onclick="currentSlide(1)" class="dot"></span> 
+				<span onclick="currentSlide('mySlides2',0)" class="mySlides2_dot dot"></span> 
+				<span onclick="currentSlide('mySlides2',1)" class="mySlides2_dot dot"></span> 
             </div>
             </div>
 		</div>
@@ -317,17 +317,17 @@ different times during the E-summit to interact with you and know about your fir
 </div>
 </body>
 <script>
-
 var slideIndex = 0;
-showSlides();
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-  clearTimeout(myVar);
+//showSlides();
+function currentSlide(a,n) {
+  showSlides(a,slideIndex = n);
+  //clearTimeout(myVar);
 }
-function showSlides() {
+showSlides("mySlides2")
+function showSlides(a) {
   var i;
-  var slides = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("dot");
+  var slides = document.getElementsByClassName(a);
+  var dots = document.getElementsByClassName(a+"_dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -338,7 +338,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " green";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+//  setTimeout(showSlides, 2000);
 }
 
   var instance = M.Tabs.init(document.getElementById("tab"));

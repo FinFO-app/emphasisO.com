@@ -148,6 +148,16 @@ layout: default
     </div>
     {% endfor %}
     </div>
+     <h3 class="green-text">Promotion cum Media partners from Jamia</h3>
+    <div class="row container">
+    {% for partner in site.data.partner_jamia %}
+    <div class="col s12 m4 l3">
+        <a href="{{ partner.link }}">
+            <img src="/assets/images/{{ partner.image }}" alt="" style="width: 100%">
+        </a>
+    </div>
+    {% endfor %}
+    </div>
 </div>
 
 

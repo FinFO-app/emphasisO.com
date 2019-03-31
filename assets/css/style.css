@@ -136,30 +136,6 @@ html {scroll-behavior: smooth;}
     background: linear-gradient(to left, white 5%, transparent 100%);
   }
 }
-
-.marquee__content {
-  width: 300% !important;
-  display: flex;
-  line-height: 30px;
-  animation: marquee 10s linear infinite forwards;
-  &:hover {
-    animation-play-state: paused;
-  } 
-}
-
-.list-inline {
-  display: flex;
-  justify-content: space-around;
-  width: 33.33%;
-  /* reset list */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-66.6%); }
-}
 @media only screen and (min-width: 992px) {
 
     nav .brand-logo {

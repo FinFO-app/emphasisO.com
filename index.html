@@ -136,9 +136,9 @@ layout: default
 
 
 
-<div class="container" style="overflow:hidden;">
+<div class="container" style="overflow:hidden;" id="partner_con">
     <h3 class="green-text">Partners</h3>
-    <div class="row marquee__content container">
+    <div class="row marquee__content container" id="partner_con1_child">
     {% for partner in site.data.partners %}
     <div class="col s12 m4 l3">
         <p style="text-align:center">{{ partner.type }}</p>

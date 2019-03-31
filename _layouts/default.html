@@ -13,7 +13,7 @@
 	}
     function load_marquee(){
 		//partner_con
-		_("marquee_style").innerHTML="@media screen and (min-width: 600px) {.marquee__content { width: 300% !important; display: flex; line-height: 30px; animation: marquee 9s linear infinite forwards; &:hover { animation-play-state: paused; } } .list-inline { display: flex; justify-content: space-around; width: 33.33%; /* reset list */ list-style: none; padding: 0; margin: 0; } @keyframes marquee { 0% { transform: translateX(0%); } 50% { transform: translateX(-"+_("partner_con1_child").offsetWidth-_("partner_con1").offsetWidth+50+"px); } 100% { transform: translateX(0%); } }}"
+		_("marquee_style").innerHTML="@media screen and (min-width: 600px) {.marquee__content { width: 300% !important; display: flex; line-height: 30px; animation: marquee 9s linear infinite forwards; &:hover { animation-play-state: paused; } } .list-inline { display: flex; justify-content: space-around; width: 33.33%; /* reset list */ list-style: none; padding: 0; margin: 0; } @keyframes marquee { 0% { transform: translateX(0%); } 50% { transform: translateX(-"+_("partner_con1_child").offsetWidth-_("partner_con").offsetWidth+50+"px); } 100% { transform: translateX(0%); } }}"
 	}
     document.addEventListener('DOMContentLoaded', function () {
         var sideNav = document.querySelectorAll('.sidenav');

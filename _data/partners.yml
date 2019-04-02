@@ -42,3 +42,14 @@
   image: Monster.png
   link: https://www.monsterenergy.com/
   type: Exclusive Energy Partner
+
+- name: Plasma
+  image: plasma_logo.jpg
+  link: http://plasmainstitute.com/
+  type: Printing Partner
+
+- name: Enactus
+  image: Enactus_logo.jpg
+  link: http://plasmainstitute.com/
+  type: Social Partner
+

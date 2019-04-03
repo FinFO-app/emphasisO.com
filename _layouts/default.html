@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 {% include _head.html %}
-<body onLoad="em_init()" onresize="em_init()">
+<body onresize="em_init()">
 {% include _nav.html %}
 {{ content }}
 {% include _footer.html %}
@@ -57,6 +57,7 @@
             }
         })
     });
+	em_init();
 </script>
 </body>
 </html>

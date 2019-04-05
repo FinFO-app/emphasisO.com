@@ -10,6 +10,30 @@
         <meta name="keywords" content="ENTREPRENEUR'S TALK | INVESTOR'S TALK | STARTUP EXPO | GET FUNDED">
 	</head>
 <style>
+.card1 { width: 450px; height: 300px; background-color: #fff; background: linear-gradient(#fff, #fff); box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4); border-radius: 6px; overflow: hidden; position: relative; margin: 1.5rem; }
+.card h1 { text-align: center; }
+.card1 .additional { position: absolute; width: 150px; height: 100%; background: linear-gradient(#e7f3fe, #e6ffe6); transition: width 0.4s; overflow: hidden; z-index: 2; }
+.card1:hover .additional { width: 100%; border-radius: 0 5px 5px 0; } 
+.card1 .additional .user-card1 { width: 150px; height: 100%; position: relative; float: left; }
+.card1 .additional .user-card1::after { content: ""; display: block; position: absolute; top: 10%; right: -2px; height: 80%; border-left: 2px solid rgba(0,0,0,0.025);*/ }
+.card1 .additional .user-card1 .level, .card1 .additional .user-card1 .points { top: 15%; color: #fff; text-transform: uppercase; font-size: 0.75em; font-weight: bold; background: rgba(0,0,0,0.15); padding: 0.125rem 0.75rem; border-radius: 100px; white-space: nowrap; }
+.card1 .additional .user-card1 .points { top: 85%; } 
+.card1 .additional .user-card1 svg { top: 50%; }
+.card1 .additional .more-info { width: 300px; float: left; position: absolute; left: 150px; height: 100%; } 
+.card1 .additional .more-info h1 { color: #fff; margin-bottom: 0; }
+.card1.green .additional .more-info h1 { color: #224C36; } 
+.card1 .additional .coords { margin: 0 1rem; color: #fff; font-size: 1rem; }
+.card1.green .additional .coords { color: #325C46; } 
+.card1 .additional .coords span + span { float: right; } 
+.card1 .additional .stats { font-size: 2rem; display: flex; position: absolute; bottom: 1rem; left: 1rem; right: 1rem; top: auto; color: #fff; } 
+.card1.green .additional .stats { color: #325C46; } 
+.card1 .additional .stats > div { flex: 1; text-align: center; } 
+.card1 .additional .stats i { display: block; } 
+.card1 .additional .stats div.title { font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+.card1 .additional .stats div.value { font-size: 1.5rem; font-weight: bold; line-height: 1.5rem; } 
+.card1 .additional .stats div.value.infinity { font-size: 2.5rem; } 
+.card1 .general { width: 300px; height: 100%; position: absolute; top: 0; right: 0; z-index: 1; box-sizing: border-box; padding: 1rem; padding-top: 0; } 
+.card1 .general .more { position: absolute; bottom: 1rem; right: 1rem; font-size: 0.9em; }
 .tabs .tab a{color:#e6e6e6;}
 .tabs .tab a:hover { color:#fff; }
 .tabs .tab a.active { color:#fff; }
@@ -86,7 +110,7 @@ from diversified sectors will be sharing their experinces.</li>
         <div id="content2" class="white ">
             <div class="slideshow-container">
                 <div class="container mySlides1">
-                    <div id="slide_11" class="row">
+                    <div class="row">
                         <div class="col s12 l4 m4 " style="margin-top:15px">
                             <div class="card">
                                 <img src="assets/images/Kunwer-Sachdev.png" style="width:100%">
@@ -101,7 +125,7 @@ from diversified sectors will be sharing their experinces.</li>
                     </div>
                 </div>            
                 <div class="container mySlides1" >
-                    <div id="slide_12" class="row">
+                    <div class="row">
                         <div class="col s12 l4 m4 " style="margin-top:15px">
                             <div class="card">
                                 <img src="assets/images/Vikas_Jain.png" style="width:100%">
@@ -117,7 +141,7 @@ from diversified sectors will be sharing their experinces.</li>
                     </div>
                 </div>
                 <div class="container mySlides1">
-                    <div id="slide_11" class="row">
+                    <div class="row">
                         <div class="col s12 l4 m4 " style="margin-top:15px">
                             <div class="card">
                                 <img src="assets/images/poonam-singh.png" style="width:100%">
@@ -175,7 +199,7 @@ different times during the E-summit to interact with you and know about your fir
         <div id="content2" class="white ">
             <div class="slideshow-container">
                 <div class="container mySlides2">
-                    <div id="slide_11" class="row">
+                    <div class="row">
                         <div class="col s12 l4 m4 " style="margin-top:15px">
                             <div class="card">
                                 <img src="assets/images/padmaja__ruparel.jpg" style="width:100%">
@@ -190,7 +214,7 @@ different times during the E-summit to interact with you and know about your fir
                     </div>
                 </div>            
                 <div class="container mySlides2" >
-                    <div id="slide_12" class="row">
+                    <div class="row">
                         <div class="col s12 l4 m4 " style="margin-top:15px">
                             <div class="card">
                                 <img src="assets/images/saurabh_jain.jpg" style="width:100%">
@@ -243,9 +267,65 @@ different times during the E-summit to interact with you and know about your fir
    
     	<div id="content1" class="white">
         	<div class="container" style="padding:15px;text-align:left">
-                <ul>
-                    
-                </ul>
+               <div class="center">
+               		<div class="card1 green" style="margin-left:auto;margin-right:auto">
+                        <div class="additional">
+                            <div class="user-card1">
+                                <img src="http://127.0.0.1/emphasiso.com/assets/images/vijay_singh.jpg" style="width:150px;margin-top:0px">
+                                <h5 style=";margin-top:10px">Vijay Singh Rathore<span style="font-size:15px"><br>Partner, Innerwave</spam></h5>
+                                <h5></h5>
+                            </div>
+                            <div class="more-info">
+                                <p>- Chartered Accountant<p>
+                                <p>- ICICI, RANAG</p>
+                                <p>- Over 5 years of experience</p>
+                                <p>- vijay.rathore@innerwave.in</p>
+                            </div>
+                        </div>
+                        <div class="general">
+                            <img src="http://127.0.0.1/emphasiso.com/assets/images/innerwave.jpg" style="width:100%">
+                            <p>InnerWave is one of the fastest growing Corporate Advisory firms in India. With over 75 professional staff across 5 offices, the firm provides robust advisory services & expansion solutions on complex business & financial matters through focused coverage groups.</span>
+                        </div>
+                    </div>
+                    <div class="card1 green" style="margin-left:auto;margin-right:auto">
+                        <div class="additional">
+                            <div class="user-card1">
+                                <img src="http://127.0.0.1/emphasiso.com/assets/images/hartej_sethi.jpg?a" style="width:150px;margin-top:0px">
+                                <h5 style=";margin-top:10px">Hartej Sethi<span style="font-size:15px"><br>Founder, Linqq</spam></h5>
+                                <h5></h5>
+                            </div>
+                            <div class="more-info" style="padding:15px">
+                                <p>Hartej Sethi Hartej has a strong business background with Degree in B.Com(hons) from the University of Delhi. He has been successfully handling & growing the family's business since 2009, in Manufacturing of Oem Coolants/Antifreeze, Lubricants, Filter's, Smart Device's, Fire & Safety equipment.is the Founder of LINQQ- Professional Networking App.</p>
+                            </div>
+                        </div>
+                        <div class="general" style="padding:0">
+                            <img src="http://127.0.0.1/emphasiso.com/assets/images/linqq.jpg?" style="width:100%">
+                            <p style="margin-top:5px">LINQQ is a hyperlocal professional networking platform which helps you build meaningful professional relationships. LINQQ app makes a perfect platform which bridges the gap between professionals, freelancers, businesses and startups to make a one-stop shop for all networking opportunities.</span>
+                        </div>
+                    </div>
+                    <div class="card1 green" style="margin-left:auto;margin-right:auto">
+                        <div class="additional">
+                            <div class="user-card1">
+                                <img src="http://127.0.0.1/emphasiso.com/assets/images/pavan_verma.jpg" style="width:150px;margin-top:0px">
+                                <h5 style=";margin-top:10px">Pavan Verma<span style="font-size:15px"><br>CEO, Redian Software</spam></h5>
+                                <h5></h5>
+                            </div>
+                            <div class="more-info" style="padding:15px">
+                                <p>Mr. Pavan Verma is Founder and CEO of Redian Software - an open source software
+                    development company headquartered at Noida, India. He is an engineering graduate in
+                    computer science and holds more than 11 years experience in enterprise mobility, digital
+                    transformation, and technological advancement helped many organizations towards new age
+                    practices.
+                    </p>
+                            </div>
+                        </div>
+                        <div class="general">
+                          <img src="http://127.0.0.1/emphasiso.com/assets/images/redian_soft.png?afa" style="width:100%">
+                          <p>Redian Software is leading open source software development company, specialized in CRM solutions and managed services. Redian Software majorly works on open source software like SuiteCRM, Drupal, YII, Laravel, Android and Symfony.</span>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+               </div>
                     <div style="text-align:center">
 <a class="waves-effect waves-light btn-large green" href="https://goo.gl/forms/sTP017ZZGHwq5dIk1" ><i class="fa fa-rocket right rotate-45"></i>Apply Now</a>
 </div>
@@ -276,7 +356,7 @@ different times during the E-summit to interact with you and know about your fir
     	<div id="content1" class="center white">
         	<div class="container" style="padding:15px;text-align:left">
             	 <h3 class="center"><b><a href="timeline.html">View full Timeline</b></h3></a>
-                        <p style="text-align:center"><a class="waves-effect waves-light btn-large green" href="https://goo.gl/forms/M7YCbvBwZTgWKwcn2"><i class="fas fa-hand-holding-usd right" ></i>Apply Now</a></p>
+                        
         	</div>
     	</div>
     </div>

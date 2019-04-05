@@ -1,193 +1,27 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+            <div class="slideshow-container">
 
-title: 'EmphasisO: Welcome to Biggest E Summit in Jamia'
-layout: default
----
-
-<div class="row">
-    <div class="col s12 m12 l12" style="padding: 0">
-        <div class="parallax-container full-page" style="background-color: rgba(0, 0, 0, 0.7)">
-            <div class="parallax">
-                <img src="/assets/images/galib-lawn.jpg">
+<div id="slide1">a</div>
+            
+            <div style="text-align:center">
+                <span onclick="currentSlide('mySlides2',0)" class="mySlides2_dot dot"></span> 
+                <span onclick="currentSlide('mySlides2',1)" class="mySlides2_dot dot"></span> 
             </div>
-            <div class="center-hv full-page" style="padding: 20px;">
-                <div class="center">
-                    <!--<img src="/assets/images/main-logo.png" alt="" class="responsive-img">-->
-                    <img src="/assets/images/emphasiso-logo-full-200.png" alt="" style="width: 150px"
-                         class="animated jackInTheBox">
-                    <h1 style="margin: 0" class="green-text animated fadeInUp delay-1s">
-                        EmphasisO
-                    </h1>
-                    <h5 class="animated fadeIn lightSpeedIn delay-1s">
-                        Flight to startup world
-                    </h5>
-                    <br>
-                    <div class="animated fadeIn delay-1s" style="padding: 5px;">
-                        <h5 class="animated fadeIn delay-1s" style="font-size: 2.2rem">
-                            April 13th -14th
-                        </h5>
-                    </div>
-                    <br>
-                    <div style="position:absolute" class="center">
-                    	<div class="animated fadeIn delay-1s green card" style="padding: 15px;border-radius: 10px;;width:400px;height:65px;z-index:1;position:absolute">
-                        	<h5 class="animated pulse delay-2s white-text" style="font-size: 2.0rem;margin: 0">
-                            	<a href="http://go.eventshigh.com/5svcwz" style="color:white">Register Now (Early bird)</a>
-                            </h5>
-						</div>
-                        <div class="green card white-text" style="width:500px;height:200px;position:relative;right:50px;top:50px;z-index:0; border-radius: 10px;padding:16px">
-                        	<p class="white-text" style="font-size:25px">You will get</p>
-                            <p class="white-text" style="">*Complementary Internship Fair</p>
-                            <p class="white-text" style="">*Energy Drink</p>
-                            <p class="white-text" style="">*Notepad and pens</p>
-                            <p class="white-text" style="">*goodies, etc</p>
-						</div>
-					</div>
-                </div>
             </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row flex" id="logos_1" style="height:200px">
-        <div class="col s6 center"> <img src="jmi_logo.png">
-        </div>
-        <div  class="col s6 center"> <img src="cie_logo.png">
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row flex" id="explain-row">
-        {% for intro in site.data.intro %}
-        <div class="col s12 m6 l6" style="margin-bottom: 25px">
-            <div class="card scrollimate green" style="height: 100%; border-radius: 10px"
-                 data-scrollimate-class="fadeInUp">
-                <div class="card-content scrollimate" style="font-size: 1.3rem;color: rgba(255, 255, 255, 0.75)">
-                    <span class="card-title scrollimate" style="font-size: 2rem">
-                        <b class="white-text">
-                            {{intro.title}}
-                        </b>
-                    </span>
-                    {{intro.body}}
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</div>
-
-<div class="green" style="padding-top: 20px;padding-bottom: 20px">
-    <div class="container">
-        <div class="row">
-            <h3 class="white-text">
-                Speakers
-            </h3>
-
-            {% for speaker in site.data.speakers %}
-            <div class="col s12 m6 l4">
-                <div class="card scrollimate" data-scrollimate-class="fadeIn">
-                    <div class="card-image">
-                        <img src="/assets/images/{{ speaker.image }}">
-                        <div class="card-title green" style="opacity: 0.75;width: 100%">
-                            <h5 class="white-text" style="margin: 0">
-                                {{ speaker.name }}
-                            </h5>
-                            <p style="font-size: 1.1rem;color: #ffffff">
-                                {{ speaker.post }}, <br>
-                                {{ speaker.company }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-
-        </div>
-    </div>
-	<div class="container" id="esummit">
-		<div class="row">
-			<h3 class="white-text">
-				E-SUMMIT 2019
-			</h3>     
-        	{% for esummit in site.data.esummit %}       
-			<div class="col s12 m6 l4">
-				<div class="card scrollimate animated fadeIn" data-scrollimate-class="fadeIn" style="opacity: 1;">
-					<div class="card-image">
-						<img src="/assets/images/{{ esummit.image }}"  style="height:300px">
-						<div class="card-title green" style="opacity: 0.75;width: 100%">
-							<h5 class="white-text" style="margin: 0">
-								{{ esummit.name }}
-							</h5>
-						</div>
-					</div>
-				</div>            	
-			</div>
-            {% endfor %}
-		</div>
-	</div>
-</div>
 
 
 
-<div class="container">
-    <div class="row">
-        <h3 class="green-text">
-            Partners
-        </h3>
+<script>
+var startup_expo_slide=[{"name":"Mr. Anil Gupta","dp":"http://127.0.0.1/emphasiso.com/assets/images/Vikas_Jain.png","wiki":"Business Empowerment Coach","about":"Anil Kumar Gupta (AKA Er. Anil Guru) is a Business Empowerment Coach who supports ventures from Envisioning to Empowerment (E2E) by Inform, Instruct and Inspire (3Is) founders through sharing Insights, Intellect, Information and Ideas (4Is)."}]
+function _(a){return document.getElementById(a);}
 
-        {% for partner in site.data.partners %}
-        <div class="col s12 m4 l3">
-            <a href="{{ partner.link }}">
-                <img src="/assets/images/{{ partner.image }}" alt="" style="width: 100%">
-            </a>
-        </div>
-        {% endfor %}
-
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="container">
-        <div class="col s12 m12 l8">
-
-            <h3 id="faqs" class="green-text">
-                FAQs
-            </h3>
-
-            {% for faq in site.data.faqs %}
-            <b>
-                {{faq.question}}
-            </b>
-
-            <p style="font-weight: lighter">
-                {{faq.answer}}
-            </p>
-
-            <br>
-            {% endfor %}
-
-        </div>
-    </div>
-</div>
-
-
-<div class="row" style="margin: 0">
-    <div class="col s12 m12 l12" style="padding: 0">
-        <div class="parallax-container full-page" style="background-color: rgba(0, 0, 0, 0.7)">
-            <div class="parallax">
-                <img src="/assets/images/crowd.png">
-            </div>
-            <div class="center-hv full-page" style="padding: 20px;">
-
-                <div class="green" style="padding: 25px;border-radius: 10px">
-                    <h5 class="white-text" style="font-size: 2.5rem;margin: 0">
-                        <a href="http://go.eventshigh.com/5svcwz" style="color:white">Register Now (Early bird)</a>
-                    </h5>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
+function create_ppl_slide(ppl,div){
+    _(div).innerHTML="";
+    for(i=0;i<ppl.length;i++){
+            var slide_code='<div class="container mySlides2"> <div class="row"> <div class="col s12 l4 m4 " style="margin-top:15px"> <div class="card"> <img src="assets/images/'+ppl[i]["dp"]+'" style="width:100%"> </div> </div> <div class="col s12 l8 m8"> <div> <p><h3>'+ppl[i]["name"]+'</h3><h5>'+ppl[i]["wiki"]+'</h5></p> <p>'+ppl[i]["about"]+'</p> </div> </div> </div> </div>';
+            _(div).innerHTML+=slide_code;
+        
+    }
+}
+create_ppl_slide(startup_expo_slide,"slide1");
+</script>
+                

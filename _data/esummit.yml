@@ -6,10 +6,6 @@
   image: investor_talk1.png
   link: esummit.html#investor_talk
 
-- name: GET FUNDED
-  image: get_funded.jpg
-  link: esummit.html#get_funded
-
 - name: STARTUP EXPO
   image: startup_expo.jpg
   link: esummit.html#startup_expo

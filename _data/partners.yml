@@ -54,12 +54,12 @@
   type: Printing Partner
 
 - name: Enactus
-  image: enactus_logo.jpg
+  image: enactus_logo.png
   link: http://plasmainstitute.com/
   type: Social Partner
 
 - name: MyWays
-  image: myways_logo.png
+  image: myways_logo.jpg
   link: http://www.myways.in/
   type: Internship Partner
 
